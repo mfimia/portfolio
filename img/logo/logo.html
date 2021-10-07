@@ -9,7 +9,7 @@
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg"
-  width="0.955556in" height="1in"
+  width="1in" height="1in"
   viewBox="0 0 86 90">
 <path id="Selection"
      fill="none" stroke="black" stroke-width="1"
@@ -60,10 +60,10 @@
   var direction = 1;
   function updateH1Position() {
     if (i > 6) {
-      direction = -0.1;
+      direction = -0.02;
     }
-    if (i < 1) {
-      direction = 0.1;
+    if (i < 2) {
+      direction = 0.02;
     }
     i = i + direction;
     logo.style["stroke-width"] = i;
