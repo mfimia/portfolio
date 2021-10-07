@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg"
@@ -51,5 +52,25 @@
           33.11,13.25 33.38,22.14 33.38,28.79 Z" />
 </svg>
 </body>
+<!-- Logo animation. Increase/decrease thickness -->
+<script>
+  var logo = document.querySelector("svg path");
+  var i = 0;
+  logo.style.marginLeft = (i + "px");
+  var direction = 1;
+  function updateH1Position() {
+    if (i > 6) {
+      direction = -0.1;
+    }
+    if (i < 1) {
+      direction = 0.1;
+    }
+    i = i + direction;
+    logo.style["stroke-width"] = i;
+    requestAnimationFrame(updateH1Position);
+  }
+
+  requestAnimationFrame(updateH1Position);
+</script>
 </html>
 
