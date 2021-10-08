@@ -67,6 +67,9 @@
     }
     i = i + direction;
     logo.style["stroke-width"] = i;
+    let color = i * 42.5;
+    let reverseColor = 255 - color;
+    logo.style["stroke"] = `rgb(0,${reverseColor},${reverseColor})`;
     requestAnimationFrame(updateH1Position);
   }
 
