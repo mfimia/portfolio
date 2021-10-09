@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="portfolio.css" />
-  </head>
-  <body>
-    <div id="logo-container">
-      <svg
+
+</head>
+<body>
+  <svg
         xmlns="http://www.w3.org/2000/svg"
         width="4.08333in"
         height="1.98611in"
@@ -67,6 +66,26 @@
              165.75,26.25 179.20,11.87 185.00,7.82 Z"
         />
       </svg>
-    </div>
-  </body>
+</body>
+<!-- Logo animation. Increase/decrease thickness -->
+<script>
+  var logo = document.querySelector("svg path");
+  var i = 0;
+  logo.style.marginLeft = (i + "px");
+  var direction = 1;
+  function updateH1Position() {
+    if (i > 6) {
+      direction = -0.02;
+    }
+    if (i < 2) {
+      direction = 0.02;
+    }
+    i = i + direction;
+    logo.style["stroke-width"] = i;
+    requestAnimationFrame(updateH1Position);
+  }
+
+  requestAnimationFrame(updateH1Position);
+</script>
 </html>
+
