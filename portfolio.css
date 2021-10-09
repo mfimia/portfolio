@@ -4,16 +4,138 @@
     margin: 0;
 }
 
-/* #logo-container {
-    width: 80px;
-    height: 80px;
-    border: 1px solid black;
-    display: inline-block;
-} */
+:root {
+    --primary-color: rgb(40,44,52);
+    --secondary-color: rgb(245,245,215);
+}
+
+html, body {
+    color: white;
+    font-family: consolas;
+    background-color: var(--primary-color);
+}
+
+header {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    font-size: 22px;
+}
+
+main {
+    /* width: 80%;
+    margin: 0 auto; */
+    padding-top: 160px;
+}
+
+#nav-text-containter {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    /* margin-right: 20px; */
+}
+
+#about-me {
+    background-color: var(--primary-color);
+}
+
+#skills {
+    background-color: var(--secondary-color);
+}
+
+#all-content-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 900px;
+    /* border: 1px white solid; */
+    padding-bottom: 160px;
+}
+
+#about-me p {
+    text-align: center;
+
+}
+
+#pic-text-container {
+    height: 200px;
+    /* border: 1px white solid; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-me img {
+    height: 210px;
+    border-radius: 5%;
+    /* border: 4px var(--secondary-color) solid; */
+    /* display: block; */
+    /* margin: 0 auto; */
+    /* background-color: var(--secondary-color); */
+}
+
+#about-me hr {
+    width: 60%;
+}
 
 svg {
-    /* width: 100%; */
-    border: 1px solid black;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
 }
+
+#about-me-bot-text {
+    text-align: center;
+    /* border: 1px white solid; */
+}
+
+[id*="all-content-"] {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+#skills {
+    
+}
+
+#all-content-skills {
+    height: 500px;
+    /* border: 1px red solid; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    top: 900px;
+    z-index: 1;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    left: 10%;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px var(--primary-color);
+}
+
+#recent-work {
+    background-color: var(--secondary-color);
+    height: 1000px;
+    /* border: 1px solid black; */
+}
+
+
+/* #skill-cards {
+    height: 100%;
+    background-color: var(--secondary-color);
+} */
