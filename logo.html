@@ -19,7 +19,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="11.1111in" height="8.33333in"
      viewBox="0 0 800 600">
-  <path id="Selection"
+  <path id="Selection1"
         fill="black" stroke="black" stroke-width="10"
         d="M 245.00,442.00
            C 245.00,442.00 245.00,223.00 245.00,223.00
@@ -85,7 +85,7 @@
   <svg xmlns="http://www.w3.org/2000/svg"
   width="1in" height="1in"
   viewBox="0 0 86 90">
-<path id="Selection"
+<path id="Selection2"
      fill="none" stroke="black" stroke-width="1"
      d="M 33.38,28.79
         C 26.60,28.79 17.16,28.68 11.80,33.41
@@ -128,8 +128,8 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="4.79167in" height="3.63889in"
      viewBox="0 0 345 262">
-  <path id="Selection"
-        fill="rgb(121,82,179)" stroke="black" stroke-width="5"
+  <path id="Selection3"
+        fill="none" stroke="black" stroke-width="5"
         d="M 120.00,70.76
            C 125.99,69.77 127.99,73.02 132.00,77.00
              132.00,77.00 145.96,91.00 145.96,91.00
@@ -179,7 +179,7 @@
 </body>
 <!-- Logo animation. Increase/decrease thickness -->
 <script>
-  var logo = document.querySelector("svg path");
+  var logo = document.querySelector("#Selection3");
   var i = 0;
   logo.style.marginLeft = (i + "px");
   var direction = 1;
@@ -191,10 +191,10 @@
       direction = 0.02;
     }
     i = i + direction;
-    logo.style["stroke-width"] = i;
+    logo.style["stroke-width"] = i + 4;
     let color = i * 42.5;
     let reverseColor = 255 - color;
-    logo.style["stroke"] = `rgb(0,${reverseColor},${reverseColor})`;
+    logo.style["fill"] = `rgb(${color},${color},${color})`;
     requestAnimationFrame(updateH1Position);
   }
 
