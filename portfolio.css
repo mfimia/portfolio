@@ -5,13 +5,13 @@
 }
 
 :root {
-    --primary-color: rgb(40,44,52);
+    --primary-color:  rgb(40,44,52);
     --secondary-color: rgb(245,245,215);
 }
 
 html, body {
     color: white;
-    font-family: consolas;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--primary-color);
 }
 
@@ -29,6 +29,7 @@ header {
     position: fixed;
     width: 100%;
     font-size: 22px;
+    z-index: 2;
 }
 
 main {
@@ -107,12 +108,17 @@ svg {
 
 
 
-/* #skills {
-    
-} */
+#mf-name {
+    font-weight: 500;
+    padding: 10px 0 4px 0;
+}
+
+#mf-title {
+    font-weight: 100;
+}
 
 #all-content-skills {
-    height: 500px;
+    height: 1300px;
     /* border: 1px red solid; */
     border-radius: 15px;
     display: flex;
@@ -125,7 +131,23 @@ svg {
     color: var(--primary-color);
     left: 10%;
     text-align: center;
-    box-shadow: 1px 1px 1px 1px var(--primary-color);
+    box-shadow: 2px 2px 2px 2px rgba(40,44,52,.5);
+    justify-content: space-around;
+}
+
+#skills li {
+    list-style: none;
+    text-align: start;
+    /* text-indent: 12px; */
+}
+
+#all-content-skills > * {
+    border: 1px black solid;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #recent-work {
