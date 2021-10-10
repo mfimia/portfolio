@@ -179,12 +179,19 @@ svg {
 .recent-project {
     height: 300px;
     width: 400px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 10%;
 }
 
 #recent-work-text p {
     padding: 16px;
+}
+
+.recent-project img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    /* box-shadow: rgba(245,245,215,.2) 3px 3px 5px 1px; */
 }
 
 /* #skill-cards {
