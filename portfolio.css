@@ -29,9 +29,22 @@ header {
     position: fixed;
     width: 100%;
     font-size: 22px;
-    z-index: 2;
+    z-index: 5;
     box-shadow: 1px 1px 10px 1px rgba(40,44,52,.1);
 }
+
+/* #pick-background {
+    height: 220px;
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    background:var(--secondary-color);
+    width: 230px;
+    left: 30%;
+    top: 250px;
+    border-radius: 50%; */
+    
+/* } */
 
 main {
     /* width: 80%;
@@ -70,18 +83,22 @@ main {
 }
 
 #pic-text-container {
-    height: 200px;
+    height: 235px;
+    width: 235px;
     /* border: 1px white solid; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(10,10,10);
+    border-radius: 50%;
 }
 
 #about-me img {
     height: 210px;
-    border-radius: 5%;
+    /* border-radius: 5%; */
+    z-index: 1;
     /* border: 4px var(--secondary-color) solid; */
     /* display: block; */
     /* margin: 0 auto; */
@@ -116,6 +133,7 @@ svg {
 
 #mf-title {
     font-weight: 100;
+    padding-top: 16px;
 }
 
 #all-content-skills {
