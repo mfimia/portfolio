@@ -30,6 +30,7 @@ header {
     width: 100%;
     font-size: 22px;
     z-index: 2;
+    box-shadow: 1px 1px 10px 1px rgba(40,44,52,.1);
 }
 
 main {
@@ -118,21 +119,22 @@ svg {
 }
 
 #all-content-skills {
+    /* margin: 0 auto; */
     height: 1300px;
     /* border: 1px red solid; */
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 80%;
+    width: 70%;
     top: 900px;
     z-index: 1;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    left: 10%;
+    left: 15%;
     text-align: center;
-    box-shadow: 2px 2px 2px 2px rgba(40,44,52,.5);
-    justify-content: space-around;
+    /* box-shadow: 1px 1px 10px 1px rgba(40,44,52,.5); */
+    justify-content: space-between;
 }
 
 #skills li {
@@ -142,25 +144,48 @@ svg {
 }
 
 #all-content-skills > * {
-    box-shadow: 1px 1px 1px 1px rgba(40,44,52,.3);
-    width: 80%;
+    box-shadow: 1px 1px 10px 1px rgba(40,44,52,.3);
+    /* width: 80%; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 32%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 15px;
+    padding: 2% 10%;
 }
 
 
 
-#recent-work {
+#empty-section {
     background-color: var(--secondary-color);
     height: 1000px;
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
 }
 
+#recent-work {
+    height: 1800px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 300px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.recent-project {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+#recent-work-text p {
+    padding: 16px;
+}
 
 /* #skill-cards {
     height: 100%;
