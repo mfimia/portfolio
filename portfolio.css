@@ -212,6 +212,39 @@ svg {
     /* box-shadow: rgba(245,245,215,.2) 3px 3px 5px 1px; */
 }
 
+footer {
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footer-icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+
+#footer-socials {
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer-socials * {
+    border: 1px solid black;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    margin: 0px 2px;
+}
+
 /* #skill-cards {
     height: 100%;
     background-color: var(--secondary-color);
