@@ -12,10 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/resize.css">
 </head>
 
 <body>
   <header>
+    <div id="header-container">
     <div id="logo-container">
       <svg xmlns="http://www.w3.org/2000/svg" width="4.08333in" height="1.98611in" viewBox="0 0 294 143">
         <path id="Selection" fill="rgb(40,44,52)" stroke="rgb(40,44,52)" stroke-width="5" d="M 104.00,7.76
@@ -65,10 +67,11 @@
                        165.75,26.25 179.20,11.87 185.00,7.82 Z" />
       </svg>
     </div>
-    <div id="nav-text-containter">
+    <div id="nav-text-container">
       <span>Work</span>
       <span>Contact</span>
     </div>
+  </div>
   </header>
   <div id="pick-background"></div>
   <main>
@@ -355,22 +358,23 @@
     </section>
     <section id="recent-work">
       <div id="recent-work-text">
-      <h2>My Recent Work</h2>
-      <p>Here are a few design projects I've worked on recently. Want to see more? <a href="#">Contact me.</a></p>
+        <h2>My Recent Work</h2>
+        <p>Here are a few design projects I've worked on recently. Want to see more? <a href="#">Contact me.</a></p>
+      </div>
+      <div id="recent-projects">
+      <div class="recent-project">
+        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
+      </div>
+      <div class="recent-project">
+        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
+      </div>
+      <div class="recent-project">
+        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
+      </div>
+      <div class="recent-project">
+        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
+      </div>
     </div>
-
-      <div class="recent-project">
-        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
-      </div>
-      <div class="recent-project">
-        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
-      </div>
-      <div class="recent-project">
-        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
-      </div>
-      <div class="recent-project">
-        <a href="#"><img src="/img/logo/F M Monogram.png" alt="Img placeholder"></a>
-      </div>
     </section>
   </main>
   <footer>
@@ -426,54 +430,17 @@
     </div>
     <div id="footer-socials">
       <div class="social-container color-primary">
-      <img src="/img/logo/socials/linkedin-in-brands.svg" alt="LinkedIn">
+        <img src="/img/logo/socials/linkedin-in-brands.svg" alt="LinkedIn">
       </div>
       <div class="social-container color-primary">
-      <img src="/img/logo/socials/github-brands.svg" alt="Github">
+        <img src="/img/logo/socials/github-brands.svg" alt="Github">
       </div>
       <div class="social-container color-primary">
-      <img src="/img/logo/socials/dribbble-brands.svg" alt="Dribbble">
+        <img src="/img/logo/socials/dribbble-brands.svg" alt="Dribbble">
       </div>
       <div class="social-container color-primary">
-      <img src="/img/logo/socials/email_black_24dp.svg" alt="Email">
+        <img src="/img/logo/socials/email_black_24dp.svg" alt="Email">
       </div>
-      <!-- <div class="social-container">
-        <svg xmlns="http://www.w3.org/2000/svg"
-        width="0.855556in" height="0.711111in"
-        viewBox="0 0 77 64">
-     <path id="Imported Path #1"
-           fill="none" stroke="black" stroke-width="1"
-           d="M 58.56,40.42
-              C 55.08,40.42 51.82,38.95 48.86,36.55
-                48.86,36.55 49.58,33.13 49.58,33.13
-                49.58,33.13 49.46,33.13 49.46,33.13
-                50.10,29.52 52.14,23.47 58.40,23.47
-                63.10,23.47 66.93,27.30 66.93,32.00
-                66.91,36.69 63.09,40.51 58.40,40.51
-                58.40,40.51 58.56,40.42 58.56,40.42 Z
-              M 58.40,14.83
-              C 50.40,14.83 44.19,20.04 41.67,28.60
-                37.82,22.81 34.90,15.87 33.20,10.02
-                33.20,10.02 24.74,10.02 24.74,10.02
-                24.74,10.02 24.74,32.45 24.74,32.45
-                24.74,36.88 21.13,40.48 16.72,40.48
-                12.30,40.48 8.70,36.88 8.70,32.45
-                8.70,32.45 8.70,9.92 8.70,9.92
-                8.70,9.92 0.08,9.92 0.08,9.92
-                0.08,9.92 0.08,32.36 0.08,32.36
-                0.05,41.55 7.52,49.09 16.70,49.09
-                25.88,49.09 33.35,41.55 33.35,32.36
-                33.35,32.36 33.35,28.60 33.35,28.60
-                35.03,32.09 37.08,35.62 39.57,38.76
-                39.57,38.76 34.29,63.59 34.29,63.59
-                34.29,63.59 43.11,63.59 43.11,63.59
-                43.11,63.59 46.94,45.58 46.94,45.58
-                50.29,47.73 54.14,49.07 58.56,49.07
-                68.01,49.07 75.70,41.33 75.70,31.87
-                75.70,22.44 68.01,14.74 58.56,14.74
-                58.56,14.74 58.40,14.83 58.40,14.83 Z" />
-    </svg>
-      </div> -->
     </div>
   </footer>
 </body>
