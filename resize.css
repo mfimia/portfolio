@@ -87,6 +87,9 @@
     footer > * {
         width: 20% !important;
     }
+    #about-me hr {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 1350px) {
@@ -94,6 +97,7 @@
         /* color: red; */
         width: 60%;
     }
+    
 }
 
 @media screen and (min-width: 1490px) {
@@ -118,5 +122,9 @@
     #recent-work-text {
         width: 40%;
         /* line-height: 1.6; */
+    }
+
+    #about-me hr {
+        width: 20%;
     }
 }
