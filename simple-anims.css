@@ -59,8 +59,9 @@
 }
 
 /* Adding underline animation that wraps container when hover. Change color line 78 and 86 */
+
 .portfolio-experiment a {
-  color: white;
+  color: var(--secondary-color);
   padding: 0.2em calc(0.2em * 1.2);
   border: 2px solid transparent;
   position: relative;

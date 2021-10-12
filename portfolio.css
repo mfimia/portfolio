@@ -9,6 +9,9 @@
 :root {
   --primary-color: rgb(40, 44, 52);
   --secondary-color: rgb(245, 245, 215);
+  --blue: rgb(52, 157, 199);
+  --orange: #f26522;
+  --green: rgb(104, 184, 104);
 }
 
 html,
@@ -170,7 +173,8 @@ svg {
 #skills li {
   list-style: none;
   text-align: start;
-  /* text-indent: 12px; */
+  text-indent: 20px;
+  /* font-size: 14px; */
 }
 
 #all-content-skills > * {
@@ -184,6 +188,31 @@ svg {
   justify-content: space-around;
   border-radius: 15px;
   padding: 2% 10%;
+}
+
+.card-title {
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.title {
+  font-weight: 700;
+  padding: 4px 0;
+}
+
+#front-end .card-title, #front-end .title, #front-end svg path {
+  color: var(--blue);
+  stroke: var(--blue);
+}
+
+#back-end .card-title, #back-end .title, #back-end svg path {
+  color: var(--green);
+  stroke: var(--green);
+}
+
+#game-dev .card-title, #game-dev .title, #game-dev svg path {
+  color: var(--orange);
+  stroke: var(--orange);
 }
 
 #empty-section {
@@ -278,3 +307,13 @@ footer {
   filter: invert(14%) sepia(9%) saturate(1210%) hue-rotate(182deg)
     brightness(84%) contrast(86%);
 }
+
+/* canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 572px; 
+  height: 352px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+} */
