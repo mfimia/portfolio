@@ -12,6 +12,8 @@
   --blue: rgb(26, 96, 126);
   --orange: rgb(156, 105, 9);
   --green: rgb(16, 90, 16);
+  --oposite: #f5d6ad;
+  /* --filter: invert(97%) sepia(7%) saturate(867%) hue-rotate(339deg) brightness(104%) contrast(92%); */
 }
 
 html,
@@ -298,6 +300,12 @@ footer {
   align-items: center;
 }
 
+#footer-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #footer-socials img {
   height: 32px;
   width: 32px;
@@ -306,6 +314,17 @@ footer {
 .color-primary {
   filter: invert(14%) sepia(9%) saturate(1210%) hue-rotate(182deg)
     brightness(84%) contrast(86%);
+}
+
+.social-container:hover {
+  background-color: var(--primary-color);
+  transition-duration: 0.4s;
+  /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
+}
+
+.hover-color:hover {
+  filter: invert(91%) sepia(22%) saturate(202%) hue-rotate(17deg) brightness(104%) contrast(92%);
+  transition-duration: 0.4s;
 }
 
 /* canvas {
