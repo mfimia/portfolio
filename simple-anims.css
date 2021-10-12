@@ -171,12 +171,12 @@
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  /* overflow: visible; */
+  overflow: hidden;
   padding: 15px 10px;
 }
 
 .three-d {
-  perspective: 200px;
+  perspective: 201px;
   transition: all 0.07s linear;
   position: relative;
   cursor: pointer;
