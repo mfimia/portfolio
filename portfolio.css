@@ -12,6 +12,7 @@
   --blue: rgb(26, 96, 126);
   --orange: rgb(156, 105, 9);
   --green: rgb(16, 90, 16);
+  --new-orange: rgb(230,90,27);
 }
 
 html,
@@ -91,6 +92,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  /* background-color: var(--new-orange); */
   background-color: rgb(10, 10, 10);
   border-radius: 50%;
 }
