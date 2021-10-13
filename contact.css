@@ -1,0 +1,39 @@
+
+#pic-text-container {
+    height: 235px;
+    width: 235px;
+    /* border: 1px white solid; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50%;
+  }
+  
+  #about-me img {
+    height: 210px;
+    z-index: 1;
+  }
+  
+  #only-text-containter {
+    font-size: larger;
+  }
+  
+  #about-me hr {
+    width: 40%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      rgba(245, 245, 215, 0),
+      rgba(245, 245, 215, 0.75),
+      rgba(245, 245, 215, 0)
+    );
+  }
+
+  .empty-pic-container {
+      /* display: inline-block !important; */
+      height: 180px !important;
+  }

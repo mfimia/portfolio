@@ -322,7 +322,7 @@ footer {
   /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
 }
 
-.hover-color:hover {
+.social-container:hover .hover-color {
   filter: invert(91%) sepia(22%) saturate(202%) hue-rotate(17deg) brightness(104%) contrast(92%);
   transition-duration: 0.4s;
 }

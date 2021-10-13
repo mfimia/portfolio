@@ -14,8 +14,8 @@
     #about-me-bot-text, #recent-work-text {width: 50%;}
     #footer-socials, #footer-icon-text {width: 28%;}
     #nav-text-container {
-        justify-content: space-around;
-        width: 200px;
+        justify-content: space-around !important;
+        width: 210px !important;
     }
     #all-content-skills {
         height: 450px;
