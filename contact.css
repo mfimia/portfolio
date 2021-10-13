@@ -1,30 +1,40 @@
 
-#pic-text-container {
-    height: 235px;
-    width: 235px;
-    /* border: 1px white solid; */
-    margin: 0 auto;
+
+.contact-top {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+.contact-top-pic {
+    height: 130px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: rgb(10, 10, 10);
     border-radius: 50%;
-  }
-  
-  #about-me img {
-    height: 210px;
     z-index: 1;
   }
   
-  #only-text-containter {
-    font-size: larger;
+  .contact-top img {
+    position: absolute;
+    height: 120px;
+    z-index: 2;
+    top: 125px;
   }
   
-  #about-me hr {
-    width: 40%;
+  .contact-top hr {
+    
+    position: absolute;
+    top: 204px;
+    width: 90%;
     border: 0;
-    height: 2px;
+    height: 1px;
     background-image: linear-gradient(
       to right,
       rgba(245, 245, 215, 0),
@@ -33,7 +43,80 @@
     );
   }
 
-  .empty-pic-container {
-      /* display: inline-block !important; */
-      height: 180px !important;
-  }
+.contact-bot {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 750px;
+}
+
+.top-text {
+  font-size: x-large;
+  text-align: center;
+  line-height: 1.4;
+  width: 70%;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-around;
+  /* border: 1px solid white; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: large;
+}
+
+#message {
+  height: 200px;
+  line-height: 1.6;
+  font-size: large;
+  margin-top: 8px;
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  font-family: consolas;
+  border-radius: 5px;
+}
+
+#email, #name {
+  height: 50px;
+  margin-top: 8px;
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  font-size: 18px;
+  font-family: consolas;
+  border-radius: 5px;
+}
+
+#submit {
+  height: 36px;
+  width: 70px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: var(--secondary-color) 1px solid;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#submit:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+}

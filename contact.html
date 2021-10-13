@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
@@ -89,17 +90,29 @@
       </div>
       </header>
   <main>
-    <section id="about-me">
-      <div id="all-content-about-me">
-        <div id="pic-text-container" class="contact-top-pic">
+    <section class="contact-top">
+        <div class="contact-top-pic">
           <img src="img/MartinFimia-no-bg-newblack.png" alt="Martin Fimia's picture">
-          <div class="empty-pic-container">
-            <!-- <p id="mf-name">Martin Fimia</p>
-            <p id="mf-title">Full-stack web developer</p> -->
-          </div>
         </div>
         <hr class="hr-contact">
-      </div>
+    </section>
+    <section class="contact-bot">
+      <p class="top-text">Thanks for taking the time to reach out. How can I help you today?</p>
+      <form action="POST" class="contact-form">
+        <div class="input-container">
+          <label for="name" class="label">Name</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="input-container">
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="input-container">
+          <label for="message" class="label">Message</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+        <input type="submit" id="submit" value="Submit">
+      </form>
     </section>
 </body>
 </html>
