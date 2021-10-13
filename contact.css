@@ -90,6 +90,7 @@
   border: 1px solid var(--secondary-color);
   font-family: consolas;
   border-radius: 5px;
+  padding: 10px;
 }
 
 #email, #name {
@@ -101,11 +102,12 @@
   font-size: 18px;
   font-family: consolas;
   border-radius: 5px;
+  text-indent: 10px;
 }
 
 #submit {
-  height: 36px;
-  width: 70px;
+  height: 44px;
+  width: 80px;
   margin: 0 auto;
   border-radius: 30px;
   background-color: var(--primary-color);
@@ -113,10 +115,25 @@
   border: var(--secondary-color) 1px solid;
   cursor: pointer;
   font-weight: 500;
+  font-size: large;
 }
 
 #submit:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border: var(--primary-color) 1px solid;
+  transition-duration: 0.4s;
+}
+
+
+@media screen and (min-width: 640px) {
+  .contact-form {
+    width: 560px;
+  }
+
+  .top-text {
+    font-size: xx-large;
+    width: 560px;
+    padding-bottom: 70px;
+  }
 }

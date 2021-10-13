@@ -1,3 +1,9 @@
+@media screen and (max-width: 380px) {
+    #header-container {
+        font-size: 20px !important;
+    }
+}
+
 @media screen and (min-width: 730px) {
     #about-me-bot-text, #recent-work-text {
         width: 70%;
