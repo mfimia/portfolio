@@ -11,8 +11,9 @@
   --secondary-color: rgb(245, 245, 215);
   --blue: rgb(26, 96, 126);
   --orange: rgb(156, 105, 9);
-  --green: rgb(16, 90, 16);
+  --green: rgb(78, 160, 78);
   --new-orange: rgb(230,90,27);
+  --red: rgb(173, 74, 74);
 }
 
 html,
@@ -20,6 +21,8 @@ body {
   color: var(--secondary-color);
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-color);
+  /* text-rendering: optimizeLegibility; */
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -221,8 +224,8 @@ svg {
 }
 
 #game-dev .card-title, #game-dev .title, #game-dev svg path {
-  color: var(--orange);
-  stroke: var(--orange);
+  color: var(--red);
+  stroke: var(--red);
 }
 
 #empty-section {
