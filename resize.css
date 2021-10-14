@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 730px) {
     #about-me-bot-text, #recent-work-text {
-        width: 70%;
+        width: 75%;
         font-size: larger;
     }
     #footer-socials, #footer-icon-text {width: 32%;}
@@ -17,7 +17,8 @@
 }
 
 @media screen and (min-width: 930px) {
-    #about-me-bot-text, #recent-work-text {width: 50%;}
+    #recent-work-text {width: 50%;}
+    #about-me-bot-text {width: 60%;}
     #footer-socials, #footer-icon-text {width: 28%;}
     #nav-text-container {
         justify-content: space-around !important;
@@ -37,6 +38,7 @@
         /* border-radius: 15px; */
         /* z-index:2; */
     }
+
     #all-content-skills > * {
         background-color: var(--secondary-color);
         height: 100%;
@@ -77,6 +79,11 @@
         flex-wrap:wrap;
         justify-content: space-evenly;
         height: 80%;
+    }
+
+    .skills-text {
+        width: 75%;
+        margin: 0 auto;
     }
 
     .recent-project {
@@ -122,7 +129,7 @@
     }
 
     #about-me-bot-text  {
-        width: 35%;
+        width: 36%;
     }
 
     #recent-work-text {

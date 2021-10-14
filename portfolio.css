@@ -129,6 +129,12 @@ svg {
 #about-me-bot-text,
 #recent-work-text {
   line-height: 1.6;
+  font-weight: 100;
+}
+
+#about-me-bot-text h3, #recent-work-text h2, .details h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
 #footer-icon-text p,
@@ -186,8 +192,9 @@ svg {
 
 #skills li {
   list-style: none;
-  text-align: start;
-  text-indent: 20px;
+  text-align: center;
+  /* text-indent: 20px; */
+  font-weight: 300;
   /* font-size: 14px; */
 }
 
@@ -205,13 +212,27 @@ svg {
 }
 
 .card-title {
-  font-weight: 500;
+  /* font-weight: 500; */
   padding-bottom: 5px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .title {
-  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
   padding: 4px 0;
+  font-size: 20px;
+}
+
+#skills svg path {
+  stroke-width: 0.3;
+}
+
+.skills-text, .card-text {
+  font-weight: 300;
+  font-size: 16px;
 }
 
 #front-end .card-title, #front-end .title, #front-end svg path {
