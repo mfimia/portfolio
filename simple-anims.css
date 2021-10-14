@@ -5,11 +5,36 @@
   transition-duration: 0.6s;
 }
 
-/* .raise-contact {
-  animation: ease-in;
-  transition-delay: 1s;
-  animation-duration: 1s;
-} */
+/* Adding text display to projects animations */
+.details {
+  width: 100%;
+  height: 100%;  
+  padding: 5% 8%;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  background: rgba(245,245,215,0.9);  
+  opacity: 0;
+  transition: all 0.6s ease-in;
+  border-radius: 10%;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.raise:focus .details,
+.raise:hover .details {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  opacity: 1;
+}
+
+.details h1 {
+    padding-bottom: 16px;
+}
 
 /* Class to wrap box on text link. Edit text and box colors on lines 11, 22, 58 */
 .link-wrap {
@@ -66,7 +91,7 @@
 
 /* Adding underline animation that wraps container when hover. Change color line 78 and 86 */
 
-.portfolio-experiment a {
+.hover-wrap a {
   color: var(--secondary-color);
   padding: 0.2em calc(0.2em * 1.2);
   border: 2px solid transparent;
@@ -75,7 +100,7 @@
   white-space: nowrap;
 }
 
-.portfolio-experiment a:after {
+.hover-wrap a:after {
   position: absolute;
   content: "";
   bottom: -2px;
@@ -88,51 +113,51 @@
     left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
-.portfolio-experiment .line {
+.hover-wrap .line {
   position: absolute;
   background: #f26522;
 }
-.portfolio-experiment .line.-right,
-.portfolio-experiment .line.-left {
+.hover-wrap .line.-right,
+.hover-wrap .line.-left {
   width: 2px;
   bottom: -2px;
   top: -2px;
   transform: scale3d(1, 0, 1);
 }
-.portfolio-experiment .line.-top,
-.portfolio-experiment .line.-bottom {
+.hover-wrap .line.-top,
+.hover-wrap .line.-bottom {
   height: 2px;
   left: -2px;
   right: -2px;
   transform: scale3d(0, 1, 1);
 }
-.portfolio-experiment .line.-right {
+.hover-wrap .line.-right {
   right: -2px;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transform-origin: top;
 }
-.portfolio-experiment .line.-top {
+.hover-wrap .line.-top {
   top: -2px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
 }
-.portfolio-experiment .line.-left {
+.hover-wrap .line.-left {
   left: -2px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
 }
-.portfolio-experiment .line.-bottom {
+.hover-wrap .line.-bottom {
   bottom: -2px;
   transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transform-origin: right;
 }
-.portfolio-experiment a:hover .text,
-.portfolio-experiment a:active .text {
+.hover-wrap a:hover .text,
+.hover-wrap a:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
-.portfolio-experiment a:hover:after,
-.portfolio-experiment a:active:after {
+.hover-wrap a:hover:after,
+.hover-wrap a:active:after {
   transform: scale3d(0, 1, 1);
   right: -2px;
   left: -2px;
@@ -140,27 +165,27 @@
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
     right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
 }
-.portfolio-experiment a:hover .line,
-.portfolio-experiment a:active .line {
+.hover-wrap a:hover .line,
+.hover-wrap a:active .line {
   transform: scale3d(1, 1, 1);
 }
-.portfolio-experiment a:hover .line.-right,
-.portfolio-experiment a:active .line.-right {
+.hover-wrap a:hover .line.-right,
+.hover-wrap a:active .line.-right {
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transform-origin: bottom;
 }
-.portfolio-experiment a:hover .line.-top,
-.portfolio-experiment a:active .line.-top {
+.hover-wrap a:hover .line.-top,
+.hover-wrap a:active .line.-top {
   transition: transform 0.08s linear 0.4s;
   transform-origin: right;
 }
-.portfolio-experiment a:hover .line.-left,
-.portfolio-experiment a:active .line.-left {
+.hover-wrap a:hover .line.-left,
+.hover-wrap a:active .line.-left {
   transition: transform 0.08s linear 0.48s;
   transform-origin: top;
 }
-.portfolio-experiment a:hover .line.-bottom,
-.portfolio-experiment a:active .line.-bottom {
+.hover-wrap a:hover .line.-bottom,
+.hover-wrap a:active .line.-bottom {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
 }
