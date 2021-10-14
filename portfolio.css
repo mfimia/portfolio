@@ -180,7 +180,7 @@ svg {
   flex-direction: column;
   position: absolute;
   width: 70%;
-  top: 900px;
+  top: 870px;
   z-index: 1;
   background-color: var(--secondary-color);
   color: var(--primary-color);

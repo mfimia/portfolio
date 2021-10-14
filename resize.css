@@ -38,12 +38,16 @@
         /* border-radius: 15px; */
         /* z-index:2; */
     }
+    
 
     #all-content-skills > * {
         background-color: var(--secondary-color);
+        
         height: 100%;
         border-radius: 0;
         padding: 0 2%;
+        /* background-color: rgb(21, 22, 24);
+        color: white; */
     }
     #empty-section {
         height: 200px;
