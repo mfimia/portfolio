@@ -1,22 +1,22 @@
 :root {
-    --primary-color: rgb(40, 44, 52);
-    --secondary-color: rgb(245, 245, 215);
+    --primary-color: #163D57;
+    --secondary-color: #0C2231;
     --blue: rgb(26, 96, 126);
     --orange: rgb(156, 105, 9);
     --green: rgb(78, 160, 78);
     --new-orange: rgb(230,90,27);
     --red: rgb(173, 74, 74);
-    --dark-shadow: ;
-    --light-shadow: ;
-    --light-text: ;
-    --dark-text: ;
-    --border-color: ;
-    --accent-text: ;
-    --pic-background: ;
-    --primary-transparent: ;
+    --dark-shadow: #0C2231;
+    --light-shadow: #163D57;
+    --light-text: #D6E9F5;
+    --dark-text: #D6E9F5;
+    --border-color: #4E5255;
+    --accent-text: #d1d8dd;
+    --pic-background: #06121a;
+    --primary-transparent: #163D57;
     --secondary-transparent: ;
     --secondary-75-transparent: ;
-    --border-75-transparent: ;
+    --border-75-transparent: #D6E9F5;
 }
 
 html,
