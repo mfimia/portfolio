@@ -109,12 +109,12 @@ svg {
 #about-me-bot-text,
 #recent-work-text {
   line-height: 1.6;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 #about-me-bot-text h3, #recent-work-text h2, .details h1 {
   font-family: 'Roboto Slab', serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 #footer-icon-text p,

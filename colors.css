@@ -25,6 +25,15 @@ body {
     background-color: var(--primary-color);
 }
 
+header svg path {
+    stroke: var(--light-text);
+}
+
+footer svg path {
+    fill: var(--light-text);
+    stroke: var(--light-text);
+}
+
 header {
     background-color: var(--secondary-color);
     box-shadow: 1px 1px 10px 1px var(--dark-shadow);
