@@ -96,8 +96,7 @@ header {
 
   /* Filter into light-text */
   .color-primary {
-    filter: invert(14%) sepia(9%) saturate(1210%) hue-rotate(182deg)
-      brightness(84%) contrast(86%);
+    filter: invert(86%) sepia(14%) saturate(284%) hue-rotate(168deg) brightness(105%) contrast(92%);
   }
 
   /* Filter into secondary color */
@@ -107,9 +106,9 @@ header {
     /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
   }
   
-  /* Filter into primary-color */
+  /* Filter into secondary-color */
   .social-container:hover .hover-color {
-    filter: invert(91%) sepia(22%) saturate(202%) hue-rotate(17deg) brightness(104%) contrast(92%);
+    filter: invert(10%) sepia(16%) saturate(2644%) hue-rotate(163deg) brightness(93%) contrast(94%);
     transition-duration: 0.4s;
   }
 
@@ -128,7 +127,7 @@ header {
   }
 
   .hover-wrap a:after, .hover-wrap .line {
-      background: var(--border-color);
+      background: var(--accent-text3);
   }
 
   /* .block-menu {
