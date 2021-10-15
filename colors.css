@@ -6,22 +6,33 @@
     --green: rgb(78, 160, 78);
     --new-orange: rgb(230,90,27);
     --red: rgb(173, 74, 74);
+    --dark-shadow: ;
+    --light-shadow: ;
+    --light-text: ;
+    --dark-text: ;
+    --border-color: ;
+    --accent-text: ;
+    --pic-background: ;
+    --primary-transparent: ;
+    --secondary-transparent: ;
+    --secondary-75-transparent: ;
+    --border-75-transparent: ;
 }
 
 html,
 body {
-    color: var(--secondary-color);
+    color: var(--dark-text);
     background-color: var(--primary-color);
 }
 
 header {
     background-color: var(--secondary-color);
-    box-shadow: 1px 1px 10px 1px rgba(40, 44, 52, 0.1);
+    box-shadow: 1px 1px 10px 1px var(--dark-shadow);
 }
 
 #header-container, #all-content-skills, footer, .front, .back {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--light-text);
 }
 
 #about-me {
@@ -33,35 +44,35 @@ header {
   }
 
   #pic-text-container, .contact-top-pic {
-    background-color: rgb(10, 10, 10);
+    background-color: var(--pic-background);
   }
 
   #about-me hr, .contact-top hr {
     background-image: linear-gradient(
     to right,
-    rgba(245, 245, 215, 0),
-    rgba(245, 245, 215, 0.75),
-    rgba(245, 245, 215, 0)
+    var(--primary-transparent),
+    var(--border-75-transparent),
+    var(--primary-transparent)
   );
   }
 
   #all-content-skills > *  {
-    box-shadow: 1px 1px 10px 1px rgba(40, 44, 52, 0.3);
+    box-shadow: 1px 1px 10px 1px var(--dark-shadow);
   }
 
   #front-end .card-title, #front-end .title, #front-end svg path {
-    color: var(--blue);
-    stroke: var(--blue);
+    color: var(--accent-text);
+    stroke: var(--accent-text);
   }
 
   #back-end .card-title, #back-end .title, #back-end svg path {
-    color: var(--green);
-    stroke: var(--green);
+    color: var(--accent-text);
+    stroke: var(--accent-text);
   }
   
   #game-dev .card-title, #game-dev .title, #game-dev svg path {
-    color: var(--red);
-    stroke: var(--red);
+    color: var(--accent-text);
+    stroke: var(--accent-text);
   }
 
   #empty-section {
@@ -69,56 +80,40 @@ header {
   }
   
   #footer-socials > * {
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--border-color);
   }
 
+  /* Filter into light-text */
   .color-primary {
     filter: invert(14%) sepia(9%) saturate(1210%) hue-rotate(182deg)
       brightness(84%) contrast(86%);
   }
 
+  /* Filter into secondary color */
   .social-container:hover {
-    background-color: var(--primary-color);
+    background-color: var(--light-text);
     transition-duration: 0.4s;
     /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
   }
   
+  /* Filter into primary-color */
   .social-container:hover .hover-color {
     filter: invert(91%) sepia(22%) saturate(202%) hue-rotate(17deg) brightness(104%) contrast(92%);
     transition-duration: 0.4s;
   }
 
 
-/* Contact page */
-#message, #email, #name {
-    color: white;
-  background-color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
-}
-
-#submit {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: var(--secondary-color) 1px solid;
-}
-
-#submit:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: var(--primary-color) 1px solid;
-    transition-duration: 0.4s;
-  }
 
   /* Animations */
 
   .details {
     /* Secondary color with opacity 0.9 */
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--light-text);
   }
 
   .hover-wrap a {
-    color: var(--secondary-color);
+    color: var(--dark-text);
   }
 
   .hover-wrap a:after, .hover-wrap .line {
@@ -134,3 +129,23 @@ header {
     background: var(--secondary-color);
     color: var(--primary-color);
 } */
+
+/* Contact page */
+#message, #email, #name {
+    color: var(--light-text);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+#submit {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border: var(--light-text) 1px solid;
+}
+
+#submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--primary-color) 1px solid;
+    transition-duration: 0.4s;
+  }
