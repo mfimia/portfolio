@@ -11,7 +11,9 @@
     --light-text: #D6E9F5;
     --dark-text: #D6E9F5;
     --border-color: #4E5255;
-    --accent-text: #d1d8dd;
+    --accent-text1: #B6590D;
+    --accent-text2: #E06D10;
+    --accent-text3: #F4A15D;
     --pic-background: #06121a;
     --primary-transparent: #163D57;
     --secondary-transparent: ;
@@ -70,18 +72,18 @@ header {
   }
 
   #front-end .card-title, #front-end .title, #front-end svg path {
-    color: var(--accent-text);
-    stroke: var(--accent-text);
+    color: var(--accent-text1);
+    stroke: var(--accent-text1);
   }
 
   #back-end .card-title, #back-end .title, #back-end svg path {
-    color: var(--accent-text);
-    stroke: var(--accent-text);
+    color: var(--accent-text2);
+    stroke: var(--accent-text2);
   }
   
   #game-dev .card-title, #game-dev .title, #game-dev svg path {
-    color: var(--accent-text);
-    stroke: var(--accent-text);
+    color: var(--accent-text3);
+    stroke: var(--accent-text3);
   }
 
   #empty-section {
