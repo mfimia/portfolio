@@ -19,7 +19,7 @@ header {
     box-shadow: 1px 1px 10px 1px rgba(40, 44, 52, 0.1);
 }
 
-#header-container, #all-content-skills, footer {
+#header-container, #all-content-skills, footer, .front, .back {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
@@ -108,3 +108,29 @@ header {
     border: var(--primary-color) 1px solid;
     transition-duration: 0.4s;
   }
+
+  /* Animations */
+
+  .details {
+    /* Secondary color with opacity 0.9 */
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  .hover-wrap a {
+    color: var(--secondary-color);
+  }
+
+  .hover-wrap a:after, .hover-wrap .line {
+      background: var(--border-color);
+  }
+
+  /* .block-menu {
+    background: var(--secondary-color);
+  } */
+
+/* .front,
+.back {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+} */

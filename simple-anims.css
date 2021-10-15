@@ -14,11 +14,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateY(90deg);
-  background: rgba(245,245,215,0.9);  
+  
   opacity: 0;
   transition: all 0.4s linear;
   border-radius: 10%;
-  color: var(--primary-color);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,10 +38,9 @@
     padding-bottom: 16px;
 }
 
-/* Class to wrap box on text link. Edit text and box colors on lines 11, 22, 58 */
-.link-wrap {
+/* Class to wrap box on text link */
+/* .link-wrap {
   text-decoration: none;
-  color: rgba(230, 90, 27, 1);
   position: relative;
   padding: 16px 7px;
   border-top: 2px solid rgba(255, 255, 255, 0);
@@ -89,12 +88,12 @@
   max-height: 100%;
   transition-delay: 0.28s;
   border-color: rgba(230, 90, 27, 1);
-}
+} */
 
 /* Adding underline animation that wraps container when hover. Change color line 78 and 86 */
 
 .hover-wrap a {
-  color: var(--secondary-color);
+  
   padding: 0.2em calc(0.2em * 1.2);
   border: 2px solid transparent;
   position: relative;
@@ -109,7 +108,7 @@
   left: calc(0.2em * 1.2);
   right: calc(0.2em * 1.2);
   height: 2px;
-  background: #f26522;
+  /* background: #f26522; */
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
     right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
     left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
@@ -117,7 +116,7 @@
 }
 .hover-wrap .line {
   position: absolute;
-  background: #f26522;
+  /* background: #f26522; */
 }
 .hover-wrap .line.-right,
 .hover-wrap .line.-left {
@@ -195,7 +194,7 @@
 /* Animation 3D nav */
 .block-menu {
   display: flex;
-  background: var(--secondary-color);
+  
   align-items: center;
   justify-content: space-between;
 }
@@ -239,7 +238,7 @@
 
 .back {
   transform: rotatex(-90deg) translatez(25px);
-  color: #ffe7c4;
+  /* color: #ffe7c4; */
 }
 
 .front,
@@ -249,9 +248,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: var(--secondary-color);
+  
   padding: 15px 10px;
-  color: var(--primary-color);
+  
   pointer-events: none;
 }
 
