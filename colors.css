@@ -44,14 +44,14 @@ header {
 #logo-container:hover svg path,
 #logo-container:active svg path,
 #logo-container:focus svg path {
-  stroke: var(--accent-text3);
+  stroke: var(--accent-text2);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: var(--accent-text1);
+  color: var(--accent-text2);
 }
 
 #header-container,
@@ -62,7 +62,7 @@ footer,
 }
 
 .back {
-  color: var(--accent-text3);
+  color: var(--accent-text2);
   background-color: var(--secondary-color);
 }
 
