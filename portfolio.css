@@ -112,7 +112,7 @@ svg {
   font-weight: 300;
 }
 
-#about-me-bot-text h3, #recent-work-text h2, .details h1 {
+#about-me-bot-text h2, #recent-work-text h2, .details h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
 }
@@ -170,7 +170,7 @@ svg {
 
 #skills li {
   list-style: none;
-  text-align: center;
+  text-align: start;
   /* text-indent: 20px; */
   font-weight: 300;
   /* font-size: 14px; */
