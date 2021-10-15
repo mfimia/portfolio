@@ -31,7 +31,7 @@
         justify-content: center;
         width: 90%;
         left: 5%;
-        background-color: var(--primary-color);
+        /* background-color: var(--primary-color); */
         /* box-shadow: 1px 1px 1px 1px rgba(40,44,52,.3); */
         /* border: 1px rgba(40,44,52,.1) solid; */
         /* margin: 0 auto; */
@@ -41,12 +41,12 @@
     
 
     #all-content-skills > * {
-        background-color: var(--secondary-color);
+        /* background-color: var(--secondary-color); */
         
         height: 100%;
         border-radius: 0;
         padding: 0 2%;
-        background-color: rgba(245, 245, 215, .9)
+        /* background-color: rgba(245, 245, 215, .9) */
         /* background-color: rgb(21, 22, 24);
         color: white; */
     }

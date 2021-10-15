@@ -1,0 +1,110 @@
+:root {
+    --primary-color: rgb(40, 44, 52);
+    --secondary-color: rgb(245, 245, 215);
+    --blue: rgb(26, 96, 126);
+    --orange: rgb(156, 105, 9);
+    --green: rgb(78, 160, 78);
+    --new-orange: rgb(230,90,27);
+    --red: rgb(173, 74, 74);
+}
+
+html,
+body {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    box-shadow: 1px 1px 10px 1px rgba(40, 44, 52, 0.1);
+}
+
+#header-container, #all-content-skills, footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#about-me {
+    background-color: var(--primary-color);
+  }
+  
+  #skills {
+    background-color: var(--secondary-color);
+  }
+
+  #pic-text-container, .contact-top-pic {
+    background-color: rgb(10, 10, 10);
+  }
+
+  #about-me hr, .contact-top hr {
+    background-image: linear-gradient(
+    to right,
+    rgba(245, 245, 215, 0),
+    rgba(245, 245, 215, 0.75),
+    rgba(245, 245, 215, 0)
+  );
+  }
+
+  #all-content-skills > *  {
+    box-shadow: 1px 1px 10px 1px rgba(40, 44, 52, 0.3);
+  }
+
+  #front-end .card-title, #front-end .title, #front-end svg path {
+    color: var(--blue);
+    stroke: var(--blue);
+  }
+
+  #back-end .card-title, #back-end .title, #back-end svg path {
+    color: var(--green);
+    stroke: var(--green);
+  }
+  
+  #game-dev .card-title, #game-dev .title, #game-dev svg path {
+    color: var(--red);
+    stroke: var(--red);
+  }
+
+  #empty-section {
+    background-color: var(--secondary-color);
+  }
+  
+  #footer-socials > * {
+    border: 1px solid var(--primary-color);
+  }
+
+  .color-primary {
+    filter: invert(14%) sepia(9%) saturate(1210%) hue-rotate(182deg)
+      brightness(84%) contrast(86%);
+  }
+
+  .social-container:hover {
+    background-color: var(--primary-color);
+    transition-duration: 0.4s;
+    /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
+  }
+  
+  .social-container:hover .hover-color {
+    filter: invert(91%) sepia(22%) saturate(202%) hue-rotate(17deg) brightness(104%) contrast(92%);
+    transition-duration: 0.4s;
+  }
+
+
+/* Contact page */
+#message, #email, #name {
+    color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+#submit {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: var(--secondary-color) 1px solid;
+}
+
+#submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--primary-color) 1px solid;
+    transition-duration: 0.4s;
+  }

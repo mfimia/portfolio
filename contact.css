@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(10, 10, 10);
     border-radius: 50%;
     z-index: 1;
   }
@@ -35,12 +34,6 @@
     width: 90%;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(245, 245, 215, 0),
-      rgba(245, 245, 215, 0.75),
-      rgba(245, 245, 215, 0)
-    );
   }
 
 .contact-bot {
@@ -85,9 +78,6 @@
   line-height: 1.6;
   font-size: large;
   margin-top: 8px;
-  color: white;
-  background-color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
   font-family: consolas;
   border-radius: 5px;
   padding: 10px;
@@ -95,10 +85,7 @@
 
 #email, #name {
   height: 50px;
-  margin-top: 8px;
-  color: white;
-  background-color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
+  margin-top: 8px; 
   font-size: 18px;
   font-family: consolas;
   border-radius: 5px;
@@ -110,20 +97,12 @@
   width: 80px;
   margin: 0 auto;
   border-radius: 30px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: var(--secondary-color) 1px solid;
   cursor: pointer;
   font-weight: 500;
   font-size: large;
 }
 
-#submit:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: var(--primary-color) 1px solid;
-  transition-duration: 0.4s;
-}
+
 
 
 @media screen and (min-width: 640px) {
