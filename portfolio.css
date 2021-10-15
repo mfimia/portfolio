@@ -242,6 +242,7 @@ svg {
   width: 400px;
   /* border: 1px solid white; */
   border-radius: 10%;
+  cursor: pointer;
 }
 
 #recent-work-text p {
