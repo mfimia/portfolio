@@ -6,29 +6,25 @@
   margin: 0;
 }
 
-
-
 html,
 body {
-  
   font-family: "Roboto", sans-serif;
-  
+
   /* text-rendering: optimizeLegibility; */
   -webkit-font-smoothing: antialiased;
 }
 
 header {
-  
   position: fixed;
   width: 100%;
   height: 70px;
-  
+
   z-index: 4;
 }
 
 #header-container {
-  font-family: 'Roboto Slab', serif;
-  
+  font-family: "Roboto Slab", serif;
+
   font-weight: 500;
   text-transform: uppercase;
   display: flex;
@@ -55,8 +51,6 @@ main {
   /* margin-right: 20px; */
 }
 
-
-
 #all-content-about-me {
   display: flex;
   flex-direction: column;
@@ -81,7 +75,7 @@ main {
   justify-content: space-around;
   align-items: center;
   /* background-color: var(--new-orange); */
-  
+
   border-radius: 50%;
 }
 
@@ -98,7 +92,6 @@ main {
   width: 40%;
   border: 0;
   height: 2px;
-  
 }
 
 svg {
@@ -112,8 +105,10 @@ svg {
   font-weight: 300;
 }
 
-#about-me-bot-text h2, #recent-work-text h2, .details h1 {
-  font-family: 'Roboto Slab', serif;
+#about-me-bot-text h2,
+#recent-work-text h2,
+.details h1 {
+  font-family: "Roboto Slab", serif;
   font-weight: 500;
 }
 
@@ -135,7 +130,7 @@ svg {
 #mf-name {
   font-weight: 500;
   padding: 18px 4px 56px 4px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   text-transform: uppercase;
   font-size: 16px;
   /* border: 1px white solid; */
@@ -177,7 +172,6 @@ svg {
 }
 
 #all-content-skills > * {
-  
   /* width: 80%; */
   margin: 0 auto;
   display: flex;
@@ -192,13 +186,13 @@ svg {
 .card-title {
   /* font-weight: 500; */
   padding-bottom: 5px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 18px;
 }
 
 .title {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   padding: 4px 0;
   font-size: 20px;
@@ -208,17 +202,13 @@ svg {
   stroke-width: 0.5;
 }
 
-.skills-text, .card-text {
+.skills-text,
+.card-text {
   font-weight: 300;
   font-size: 16px;
 }
 
-
-
-
-
 #empty-section {
-  
   height: 1000px;
   /* border: 1px solid red; */
 }
@@ -289,7 +279,6 @@ footer {
 }
 
 #footer-socials > * {
-  
   height: 48px;
   width: 48px;
   border-radius: 50%;
@@ -308,10 +297,6 @@ footer {
   height: 32px;
   width: 32px;
 }
-
-
-
-
 
 /* canvas {
   position: absolute;

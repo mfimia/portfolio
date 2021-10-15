@@ -14,11 +14,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateY(90deg);
-  
+
   opacity: 0;
   transition: all 0.4s linear;
   border-radius: 10%;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,13 +29,13 @@
 .raise:hover .details {
   visibility: visible;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   transform: translate(-50%, -50%) rotateY(0deg);
   opacity: 1;
 }
 
 .details h1 {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 /* Class to wrap box on text link */
@@ -93,7 +93,6 @@
 /* Adding underline animation that wraps container when hover. Change color line 78 and 86 */
 
 .hover-wrap a {
-  
   padding: 0.2em calc(0.2em * 1.2);
   border: 2px solid transparent;
   position: relative;
@@ -194,7 +193,7 @@
 /* Animation 3D nav */
 .block-menu {
   display: flex;
-  
+
   align-items: center;
   justify-content: space-between;
 }
@@ -248,9 +247,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  
+
   padding: 15px 10px;
-  
+
   pointer-events: none;
 }
 
@@ -260,7 +259,6 @@
 #logo-container:focus {
   stroke-dasharray: 10;
   animation: logo-header 60s linear infinite;
-  
 }
 
 @keyframes logo-header {
@@ -275,68 +273,68 @@
 /* Page transition. Supported for different browsers */
 .fadein {
   -webkit-animation: fadein 1.2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 1.2s; /* Firefox < 16 */
-      -ms-animation: fadein 1.2s; /* Internet Explorer */
-       -o-animation: fadein 1.2s; /* Opera < 12.1 */
-          animation: fadein 1.2s;
+  -moz-animation: fadein 1.2s; /* Firefox < 16 */
+  -ms-animation: fadein 1.2s; /* Internet Explorer */
+  -o-animation: fadein 1.2s; /* Opera < 12.1 */
+  animation: fadein 1.2s;
 }
 
 @keyframes fadein {
-  from { 
+  from {
     transform: translateY(1em);
     opacity: 0;
-   }
-  to { 
+  }
+  to {
     opacity: 1;
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-  from { 
+  from {
     transform: translateY(1em);
     opacity: 0;
-   }
-  to { 
+  }
+  to {
     opacity: 1;
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-  from { 
+  from {
     transform: translateY(1em);
     opacity: 0;
-   }
-  to { 
+  }
+  to {
     opacity: 1;
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-  from { 
+  from {
     transform: translateY(1em);
     opacity: 0;
-   }
-  to { 
+  }
+  to {
     opacity: 1;
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-  from { 
+  from {
     transform: translateY(1em);
     opacity: 0;
-   }
-  to { 
+  }
+  to {
     opacity: 1;
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -376,14 +374,27 @@
     opacity: 1;
     transform: translateX(-30px);
   }
-  80% { transform: translateX(10px); }
-  100% { transform: translateX(0); }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes showup {
-  0% {visibility:hidden; opacity:0;}
-  65% {visibility: visible; opacity: 0;}
-  100% {visibility: visible; opacity: 1;}
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  65% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .bounce-in-left {
@@ -399,47 +410,58 @@
     opacity: 1;
     transform: translateX(30px);
   }
-  80% { transform: translateX(-10px); }
-  100% { transform: translateX(0); }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes showup {
-  0% {visibility:hidden; opacity:0;}
-  65% {visibility: visible; opacity: 0;}
-  100% {visibility: visible; opacity: 1;}
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  65% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
-
 
 /* Completion of bounce animation by showing face and text at the end */
 .showup {
   animation: showup 3s;
 }
 
-
 /* Cool animation that might be helpful */
 .flip {
-	backface-visibility: visible !important;
-	animation: flip 2s ease;
+  backface-visibility: visible !important;
+  animation: flip 2s ease;
 }
 @keyframes flip {
-	0% {
-		transform: perspective(400px) rotateY(0);
-		animation-timing-function: ease-out;
-	}
-	40% {
-		transform: perspective(400px) translateZ(150px) rotateY(170deg);
-		animation-timing-function: ease-out;
-	}
-	50% {
-		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-		animation-timing-function: ease-in;
-	}
-	80% {
-		transform: perspective(400px) rotateY(360deg) scale(.95);
-		animation-timing-function: ease-in;
-	}
-	100% {
-		transform: perspective(400px) scale(1);
-		animation-timing-function: ease-in;
-	}
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
 }

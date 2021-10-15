@@ -1,44 +1,44 @@
 :root {
-    --primary-color: #163D57;
-    --secondary-color: #0C2231;
-    --blue: rgb(26, 96, 126);
-    --orange: rgb(156, 105, 9);
-    --green: rgb(78, 160, 78);
-    --new-orange: rgb(230,90,27);
-    --red: rgb(173, 74, 74);
-    --dark-shadow: #0C2231;
-    --light-shadow: #163D57;
-    --light-text: #D6E9F5;
-    --dark-text: #D6E9F5;
-    --border-color: #4E5255;
-    --accent-text1: #B6590D;
-    --accent-text2: #E06D10;
-    --accent-text3: #F4A15D;
-    --pic-background: #06121a;
-    --primary-transparent: #163D57;
-    --secondary-transparent: ;
-    --secondary-75-transparent: ;
-    --border-75-transparent: #D6E9F5;
+    /* Main palette */
+  --primary-color: #163d57;
+  --secondary-color: #0c2231;
+  --dark-shadow: #0c2231;
+  --light-shadow: #163d57;
+  --light-text: #d6e9f5;
+  --dark-text: #d6e9f5;
+  --border-color: #4e5255;
+  --accent-text1: #b6590d;
+  --accent-text2: #e06d10;
+  --accent-text3: #f4a15d;
+  --pic-background: #06121a;
+  --primary-transparent: #163d57;
+  --border-75-transparent: #d6e9f5;
+    /* Deprecated */
+  --blue: rgb(26, 96, 126);
+  --orange: rgb(156, 105, 9);
+  --green: rgb(78, 160, 78);
+  --new-orange: rgb(230, 90, 27);
+  --red: rgb(173, 74, 74);
 }
 
 html,
 body {
-    color: var(--dark-text);
-    background-color: var(--primary-color);
+  color: var(--dark-text);
+  background-color: var(--primary-color);
 }
 
 header svg path {
-    stroke: var(--light-text);
+  stroke: var(--light-text);
 }
 
 footer svg path {
-    fill: var(--light-text);
-    stroke: var(--light-text);
+  fill: var(--light-text);
+  stroke: var(--light-text);
 }
 
 header {
-    background-color: var(--secondary-color);
-    box-shadow: 0px 0px 10px 0px var(--dark-shadow);
+  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 10px 0px var(--dark-shadow);
 }
 
 #logo-container:hover svg path,
@@ -47,114 +47,126 @@ header {
   stroke: var(--accent-text3);
 }
 
-
-h1, h2, h3, h4 {
-    color: var(--accent-text1);
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accent-text1);
 }
 
-#header-container, footer, .front {
-    background-color: var(--secondary-color);
-    color: var(--light-text);
+#header-container,
+footer,
+.front {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
 }
 
 .back {
-    color: var(--accent-text3);
-    background-color: var(--secondary-color);
+  color: var(--accent-text3);
+  background-color: var(--secondary-color);
 }
 
 #about-me {
-    background-color: var(--primary-color);
-  }
-  
-  #skills {
-    background-color: var(--secondary-color);
-  }
+  background-color: var(--primary-color);
+}
 
-  #pic-text-container, .contact-top-pic {
-    background-color: var(--pic-background);
-  }
+#skills {
+  background-color: var(--secondary-color);
+}
 
-  #about-me hr, .contact-top hr {
-    background-image: linear-gradient(
+#pic-text-container,
+.contact-top-pic {
+  background-color: var(--pic-background);
+}
+
+#about-me hr,
+.contact-top hr {
+  background-image: linear-gradient(
     to right,
     var(--primary-transparent),
     var(--border-75-transparent),
     var(--primary-transparent)
   );
-  }
+}
 
-  #all-content-skills > *  {
-    box-shadow: 1px 1px 10px 1px var(--dark-shadow);
-    background-color: var(--secondary-color);
-    /* border: 1px solid var(--border-color); */
-  }
+#all-content-skills > * {
+  box-shadow: 1px 1px 10px 1px var(--dark-shadow);
+  background-color: var(--secondary-color);
+  /* border: 1px solid var(--border-color); */
+}
 
-  #front-end .card-title, #front-end .title, #front-end svg path {
-    color: var(--accent-text1);
-    stroke: var(--accent-text1);
-  }
+#front-end .card-title,
+#front-end .title,
+#front-end svg path {
+  color: var(--accent-text1);
+  stroke: var(--accent-text1);
+}
 
-  #back-end .card-title, #back-end .title, #back-end svg path {
-    color: var(--accent-text2);
-    stroke: var(--accent-text2);
-  }
-  
-  #game-dev .card-title, #game-dev .title, #game-dev svg path {
-    color: var(--accent-text3);
-    stroke: var(--accent-text3);
-  }
+#back-end .card-title,
+#back-end .title,
+#back-end svg path {
+  color: var(--accent-text2);
+  stroke: var(--accent-text2);
+}
 
-  #empty-section {
-    background-color: var(--light-text);
-  }
-  
-  #footer-socials > * {
-    border: 1px solid var(--border-color);
-  }
+#game-dev .card-title,
+#game-dev .title,
+#game-dev svg path {
+  color: var(--accent-text3);
+  stroke: var(--accent-text3);
+}
 
-  /* Filter into light-text */
-  .color-primary {
-    filter: invert(86%) sepia(14%) saturate(284%) hue-rotate(168deg) brightness(105%) contrast(92%);
-  }
+#empty-section {
+  background-color: var(--light-text);
+}
 
-  /* Filter into secondary color */
-  .social-container:hover {
-    background-color: var(--light-text);
-    transition-duration: 0.4s;
-    /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
-  }
-  
-  /* Filter into secondary-color */
-  .social-container:hover .hover-color {
-    filter: invert(10%) sepia(16%) saturate(2644%) hue-rotate(163deg) brightness(93%) contrast(94%);
-    transition-duration: 0.4s;
-  }
+#footer-socials > * {
+  border: 1px solid var(--border-color);
+}
 
+/* Filter into light-text */
+.color-primary {
+  filter: invert(86%) sepia(14%) saturate(284%) hue-rotate(168deg)
+    brightness(105%) contrast(92%);
+}
 
+/* Filter into secondary color */
+.social-container:hover {
+  background-color: var(--light-text);
+  transition-duration: 0.4s;
+  /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
+}
 
-  /* Animations */
+/* Filter into secondary-color */
+.social-container:hover .hover-color {
+  filter: invert(10%) sepia(16%) saturate(2644%) hue-rotate(163deg)
+    brightness(93%) contrast(94%);
+  transition-duration: 0.4s;
+}
 
-  .details {
-    /* Secondary color with opacity 0.9 */
-    background: var(--secondary-color);
-    color: var(--light-text);
-  }
+/* Animations */
+
+.details {
+  /* Secondary color with opacity 0.9 */
+  background: var(--secondary-color);
+  color: var(--light-text);
+}
 
 .raise:hover,
 .raise:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--dark-shadow);
 }
 
+.hover-wrap a {
+  color: var(--dark-text);
+}
 
-  .hover-wrap a {
-    color: var(--dark-text);
-  }
+.hover-wrap a:after,
+.hover-wrap .line {
+  background: var(--accent-text3);
+}
 
-  .hover-wrap a:after, .hover-wrap .line {
-      background: var(--accent-text3);
-  }
-
-  /* .block-menu {
+/* .block-menu {
     background: var(--secondary-color);
   } */
 
@@ -165,23 +177,23 @@ h1, h2, h3, h4 {
 } */
 
 /* Contact page */
-#message, #email, #name {
-    color: var(--light-text);
+#message,
+#email,
+#name {
+  color: var(--light-text);
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
 
 #submit {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    border: var(--light-text) 1px solid;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border: var(--light-text) 1px solid;
 }
 
 #submit:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: var(--primary-color) 1px solid;
-    transition-duration: 0.4s;
-  }
-
-  
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+  transition-duration: 0.4s;
+}

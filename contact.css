@@ -1,40 +1,35 @@
-
-
 .contact-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
-
 .contact-top-pic {
-    height: 130px;
-    width: 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .contact-top img {
-    position: absolute;
-    height: 120px;
-    z-index: 2;
-    top: 125px;
-  }
-  
-  .contact-top hr {
-    
-    position: absolute;
-    top: 204px;
-    width: 90%;
-    border: 0;
-    height: 1px;
-  }
+  height: 130px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.contact-top img {
+  position: absolute;
+  height: 120px;
+  z-index: 2;
+  top: 125px;
+}
+
+.contact-top hr {
+  position: absolute;
+  top: 204px;
+  width: 90%;
+  border: 0;
+  height: 1px;
+}
 
 .contact-bot {
   padding-top: 40px;
@@ -83,9 +78,10 @@
   padding: 10px;
 }
 
-#email, #name {
+#email,
+#name {
   height: 50px;
-  margin-top: 8px; 
+  margin-top: 8px;
   font-size: 18px;
   font-family: consolas;
   border-radius: 5px;
@@ -101,9 +97,6 @@
   font-weight: 500;
   font-size: large;
 }
-
-
-
 
 @media screen and (min-width: 640px) {
   .contact-form {
