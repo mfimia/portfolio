@@ -20,11 +20,12 @@
   --dark-shadow: #0F0F0F;
   --light-shadow: #0F0F0F;
   --light-text: #d6e9f5;
-  --dark-text: #5233b8;
+  /* --dark-text: #5233b8; */
+  --dark-text: #686d70;
   --border-color: #4e5255;
-  --accent-text1: #5c2cf8;
-  --accent-text2: #5c2cf8;
-  --accent-text3: #5c2cf8;
+  --accent-text1: rgb(26, 96, 126);
+  --accent-text2: rgb(78, 160, 78);
+  --accent-text3: rgb(173, 74, 74);
   --pic-background: #0a0a0a;
   --primary-transparent: #0F0F0F;
   --border-75-transparent: #d6e9f5;
@@ -60,14 +61,20 @@ header {
 #logo-container:hover svg path,
 #logo-container:active svg path,
 #logo-container:focus svg path {
-  stroke: var(--accent-text2);
+  stroke: var(--dark-text);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: var(--dark-text);
+  font-weight: 900;
+  color: var(--light-text);
+}
+
+#about-me-bot-text h2 {
+  font-weight: 900;
+  color: var(--light-text);
 }
 
 #header-container,
@@ -78,7 +85,7 @@ footer,
 }
 
 .back {
-  color: var(--accent-text2);
+  color: var(--dark-text);
   background-color: var(--secondary-color);
 }
 
@@ -112,28 +119,32 @@ footer,
 }
 
 #front-end .card-title,
-#front-end .title,
-#front-end svg path {
-  color: var(--accent-text1);
+#front-end .title, #back-end .card-title,
+#back-end .title, #game-dev .card-title,
+#game-dev .title { 
+  font-weight: 700;
+  color: var(--light-text);
+} 
+
+#front-end svg path  {
   stroke: var(--accent-text1);
 }
 
-#back-end .card-title,
-#back-end .title,
-#back-end svg path {
-  color: var(--accent-text2);
+#back-end svg path  {
   stroke: var(--accent-text2);
 }
 
-#game-dev .card-title,
-#game-dev .title,
-#game-dev svg path {
-  color: var(--accent-text3);
+#game-dev svg path  {
   stroke: var(--accent-text3);
 }
 
+#skills p, #skills li {
+  color: var(--dark-text);
+  font-weight: 300;
+}
+
 #empty-section {
-  background-color: var(--light-text);
+  background-color: var(--dark-text);
 }
 
 #footer-socials > * {
@@ -179,7 +190,7 @@ footer,
 
 .hover-wrap a:after,
 .hover-wrap .line {
-  background: var(--accent-text3);
+  background: var(--dark-text);
 }
 
 /* .block-menu {

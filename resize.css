@@ -107,9 +107,9 @@
     height: 1200px;
   }
 
-  footer {
+  /* footer {
     padding-top: 50px;
-  }
+  } */
 
   footer > * {
     width: 20% !important;

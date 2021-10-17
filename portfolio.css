@@ -109,7 +109,7 @@ svg {
 #recent-work-text h2,
 .details h1 {
   font-family: "Roboto Slab", serif;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 #footer-icon-text p,
@@ -259,9 +259,11 @@ svg {
 footer {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 220px;
   align-items: center;
   justify-content: space-around;
+  /* padding: 10px 0; */
+  /* border: white 1px solid; */
 }
 
 #footer-icon-text {
@@ -270,6 +272,7 @@ footer {
   align-items: center;
   text-align: center;
   width: 40%;
+  /* border: white 1px solid; */
 }
 
 #footer-socials {

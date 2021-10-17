@@ -359,7 +359,7 @@
 
 /* Current bounce animation. Coming from right side */
 .bounce-in-right {
-  animation: bounce-in-right 2s ease;
+  animation: bounce-in-right 1.5s ease;
 }
 
 @keyframes bounce-in-right {
@@ -379,23 +379,10 @@
   }
 }
 
-@keyframes showup {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  65% {
-    visibility: visible;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
 
 .bounce-in-left {
   animation: bounce-in-left 2s ease;
+  /* visibility: visible; */
 }
 
 @keyframes bounce-in-left {
@@ -430,10 +417,31 @@
   }
 }
 
+/* @keyframes fadeout {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  65% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+} */
+
 /* Completion of bounce animation by showing face and text at the end */
 .showup {
-  animation: showup 3s;
+  animation: showup 2.3s;
 }
+
+/* .fadeout {
+  visibility: hidden;
+  animation: fadeout 2s ease;
+  animation-delay: 2s;
+} */
 
 /* Cool animation that might be helpful */
 .flip {
