@@ -165,7 +165,7 @@ svg {
 
 #skills li {
   list-style: none;
-  text-align: start;
+  text-align: center;
   /* text-indent: 20px; */
   font-weight: 300;
   /* font-size: 14px; */

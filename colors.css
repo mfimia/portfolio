@@ -21,8 +21,8 @@
   --light-shadow: #0F0F0F;
   --light-text: #d6e9f5;
   /* --dark-text: #5233b8; */
-  --dark-text: #686d70;
-  --border-color: #4e5255;
+  --dark-text: #b3b8bb;
+  --border-color: #6a7072;
   --accent-text1: rgb(26, 96, 126);
   --accent-text2: rgb(78, 160, 78);
   --accent-text3: rgb(173, 74, 74);
@@ -85,7 +85,7 @@ footer,
 }
 
 .back {
-  color: var(--dark-text);
+  color: var(--border-color);
   background-color: var(--secondary-color);
 }
 
@@ -144,7 +144,7 @@ footer,
 }
 
 #empty-section {
-  background-color: var(--dark-text);
+  background-color: var(--border-color);
 }
 
 #footer-socials > * {
