@@ -7,6 +7,7 @@
   --light-text: #d6e9f5;
   --dark-text: #d6e9f5;
   --border-color: #4e5255;
+  
   --accent-text1: #b6590d;
   --accent-text2: #e06d10;
   --accent-text3: #f4a15d;
@@ -23,6 +24,7 @@
   /* --dark-text: #5233b8; */
   --dark-text: #b3b8bb;
   --border-color: #6a7072;
+  --empty-color: #18191a;
   --accent-text1: rgb(26, 96, 126);
   --accent-text2: rgb(78, 160, 78);
   --accent-text3: rgb(173, 74, 74);
@@ -144,7 +146,7 @@ footer,
 }
 
 #empty-section {
-  background-color: var(--border-color);
+  background-color: var(--empty-color);
 }
 
 #footer-socials > * {
