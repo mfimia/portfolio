@@ -1,11 +1,26 @@
 @media screen and (max-width: 380px) {
   #header-container {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 
   .recent-project {
     width: 360px;
     height: 270px;
+  }
+
+  #footer-socials {
+    width: 60%;
+  }
+
+  #about-me-bot-text h2{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 460px) {
+  #header-container {
+    font-size: 18px !important;
   }
 }
 
