@@ -2,6 +2,11 @@
   #header-container {
     font-size: 20px !important;
   }
+
+  .recent-project {
+    width: 360px;
+    height: 270px;
+  }
 }
 
 @media screen and (min-width: 730px) {
