@@ -492,28 +492,24 @@
     </div>
   </footer>
 
-  <!-- <script>
-    var logo = document.querySelector("#logo-footer");
-    var i = 0;
-    logo.style.marginLeft = (i + "px");
-    var direction = 1;
+  <script>
+    let logo = document.querySelector("#logo-footer");
+    let color = 0;
+    var direction = 0;
     function updateH1Position() {
-      if (i > 8) {
-        direction = -0.05;
+      if (color > 0) {
+        direction = 0.3;
       }
-      if (i < 0) {
-        direction = 0.05;
+      if (color < 360) {
+        direction = -0.3;
       }
-      i = i + direction;
-      logo.style["stroke-width"] = i;
-      let color = i * 42.5;
-      let reverseColor = 255 - color;
-      logo.style["fill"] = `rgb(${reverseColor},${reverseColor},${reverseColor})`;
+      color = color + direction;
+      logo.style.stroke = `hsl(${color}, 50%, 50%)`;
+      logo.style.fill = `hsl(${color}, 50%, 50%)`;
       requestAnimationFrame(updateH1Position);
     }
-  
     requestAnimationFrame(updateH1Position);
-  </script> -->
+  </script>
 </body>
 
 </html>
