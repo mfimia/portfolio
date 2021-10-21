@@ -1,5 +1,5 @@
 :root {
-    /* Main palette */
+  /* Main palette */
   --primary-color: #163d57;
   --secondary-color: #0c2231;
   --dark-shadow: #0c2231;
@@ -15,10 +15,10 @@
   --border-75-transparent: #d6e9f5;
 
   /* Dark palette */
-  --primary-color: #0F0F0F;
+  --primary-color: #0f0f0f;
   --secondary-color: #0a0a0a;
-  --dark-shadow: #0F0F0F;
-  --light-shadow: #0F0F0F;
+  --dark-shadow: #0f0f0f;
+  --light-shadow: #0f0f0f;
   --light-text: #d6e9f5;
   --dark-text: #b3b8bb;
   --border-color: #6a7072;
@@ -27,12 +27,12 @@
   --accent-text2: rgb(78, 160, 78);
   --accent-text3: rgb(173, 74, 74);
   --pic-background: #0a0a0a;
-  --primary-transparent: #0F0F0F;
+  --primary-transparent: #0f0f0f;
   --border-75-transparent: #d6e9f5;
   --border-scrollbar: #5555558e;
-  --shadow-scrollbar: rgba(0,0,0,0.3);
+  --shadow-scrollbar: rgba(0, 0, 0, 0.3);
 
-    /* Deprecated */
+  /* Deprecated */
   --blue: rgb(26, 96, 126);
   --orange: rgb(156, 105, 9);
   --green: rgb(78, 160, 78);
@@ -121,26 +121,29 @@ footer,
 }
 
 #front-end .card-title,
-#front-end .title, #back-end .card-title,
-#back-end .title, #game-dev .card-title,
-#game-dev .title { 
+#front-end .title,
+#back-end .card-title,
+#back-end .title,
+#game-dev .card-title,
+#game-dev .title {
   font-weight: 700;
   color: var(--light-text);
-} 
+}
 
-#front-end svg path  {
+#front-end svg path {
   stroke: var(--accent-text1);
 }
 
-#back-end svg path  {
+#back-end svg path {
   stroke: var(--accent-text2);
 }
 
-#game-dev svg path  {
+#game-dev svg path {
   stroke: var(--accent-text3);
 }
 
-#skills p, #skills li {
+#skills p,
+#skills li {
   color: var(--dark-text);
   font-weight: 300;
 }
@@ -228,20 +231,17 @@ footer,
 }
 
 /* Scrollbar */
-::-webkit-scrollbar-track
-{
-	box-shadow: inset 0 0 6px var(--shadow-scrollbar);
-	background-color: var(--light-text);
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--shadow-scrollbar);
+  background-color: var(--light-text);
 }
 
-::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: var(--light-text);
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--light-text);
 }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: var(--secondary-color);
-	border: 1px solid var(--border-scrollbar);
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-scrollbar);
 }

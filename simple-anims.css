@@ -27,7 +27,7 @@
 }
 
 .raise:focus .details,
-.raise:hover .details {  
+.raise:hover .details {
   opacity: 0.9;
 }
 
@@ -378,7 +378,6 @@
     transform: translateX(0);
   }
 }
-
 
 .bounce-in-left {
   animation: bounce-in-left 2s ease;
