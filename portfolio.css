@@ -226,6 +226,10 @@ svg {
   padding-bottom: 80px;
 }
 
+#recent-work-text a, #recent-work-text a:active, #recent-work-text a:visited {
+  text-decoration: none;
+}
+
 #recent-projects {
   display: flex;
   flex-direction: column;
