@@ -228,7 +228,9 @@ svg {
 
 #recent-work-text a,
 #recent-work-text a:active,
-#recent-work-text a:visited {
+#recent-work-text a:visited,
+.recent-project a,
+.recent-project a:visited {
   text-decoration: none;
 }
 
