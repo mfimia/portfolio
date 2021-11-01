@@ -178,7 +178,7 @@ footer,
 
 /* Animations */
 
-.details {
+.project-card {
   /* Secondary color with opacity 0.9 */
   background: var(--secondary-color);
   color: var(--light-text);

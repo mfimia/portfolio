@@ -107,7 +107,7 @@ svg {
 
 #about-me-bot-text h2,
 #recent-work-text h2,
-.details h1 {
+.project-card h1 {
   font-family: "Roboto Slab", serif;
   font-weight: 900;
 }
@@ -245,7 +245,7 @@ svg {
   margin-bottom: 20px;
 }
 
-.recent-project {
+.recent-project, .project-card {
   height: 300px;
   width: 400px;
   /* border: 1px solid white; */
