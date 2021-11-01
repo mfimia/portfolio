@@ -117,7 +117,6 @@ footer,
 #all-content-skills > * {
   box-shadow: 1px 1px 10px 1px var(--dark-shadow);
   background-color: var(--secondary-color);
-  /* border: 1px solid var(--border-color); */
 }
 
 #front-end .card-title,
@@ -166,7 +165,6 @@ footer,
 .social-container:hover {
   background-color: var(--light-text);
   transition-duration: 0.4s;
-  /* filter: invert(94%) sepia(58%) saturate(226%) hue-rotate(333deg) brightness(105%) contrast(92%); */
 }
 
 /* Filter into secondary-color */
@@ -177,9 +175,7 @@ footer,
 }
 
 /* Animations */
-
 .project-card {
-  /* Secondary color with opacity 0.9 */
   background: var(--secondary-color);
   color: var(--light-text);
 }
@@ -197,16 +193,6 @@ footer,
 .hover-wrap .line {
   background: var(--dark-text);
 }
-
-/* .block-menu {
-    background: var(--secondary-color);
-  } */
-
-/* .front,
-.back {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-} */
 
 /* Contact page */
 #message,

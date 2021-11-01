@@ -57,34 +57,21 @@
   }
   #all-content-skills {
     height: 450px;
-    /* border: 1px red solid; */
     flex-direction: row;
     justify-content: center;
     width: 90%;
     left: 5%;
-    /* background-color: var(--primary-color); */
-    /* box-shadow: 1px 1px 1px 1px rgba(40,44,52,.3); */
-    /* border: 1px rgba(40,44,52,.1) solid; */
-    /* margin: 0 auto; */
-    /* border-radius: 15px; */
-    /* z-index:2; */
   }
 
   #all-content-skills > * {
-    /* background-color: var(--secondary-color); */
-
     height: 100%;
     border-radius: 0;
     padding: 0 2%;
     max-width: 33%;
-    /* background-color: rgba(245, 245, 215, .9) */
-    /* background-color: rgb(21, 22, 24);
-        color: white; */
   }
   #empty-section {
     height: 200px;
     display: block;
-    /* position: absolute; */
   }
 
   #front-end {
@@ -128,10 +115,6 @@
     height: 1200px;
   }
 
-  /* footer {
-    padding-top: 50px;
-  } */
-
   footer > * {
     width: 20% !important;
   }
@@ -142,7 +125,6 @@
 
 @media screen and (min-width: 1350px) {
   #header-container {
-    /* color: red; */
     width: 60%;
   }
 }
@@ -171,7 +153,6 @@
 
   #recent-work-text {
     width: 40%;
-    /* line-height: 1.6; */
   }
 
   #about-me hr {

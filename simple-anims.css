@@ -6,18 +6,9 @@
 
 /* Adding text display to projects animations */
 .project-card {
-  /* visibility: hidden; */
   padding: 5% 8%;
-  /* position: relative; */
   position: absolute;
   top: 0;
-  /* content: ""; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%) rotateY(90deg); */
-  /* transform: translateY(-304px); */
   opacity: 0;
   transition: all 0.4s ease;
   border-radius: 10%;
@@ -37,59 +28,6 @@
 }
 
 /* Class to wrap box on text link */
-/* .link-wrap {
-  text-decoration: none;
-  position: relative;
-  padding: 16px 7px;
-  border-top: 2px solid rgba(255, 255, 255, 0);
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
-  transition: padding 0.3s, border-color 0.3s;
-}
-
-.link-wrap:focus,
-.link-wrap:hover {
-  padding: 5px 7px;
-  border-color: rgba(230, 90, 27, 1);
-  outline: none;
-}
-
-.link-wrap::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  max-height: 0;
-  color: rgba(255, 255, 255, 0);
-  border-left: 2px solid rgba(255, 255, 255, 0);
-  content: "#";
-  transition: max-height 0.3s, border-color 0s;
-}
-
-.link-wrap::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 5px;
-  max-height: 0;
-  color: rgba(255, 255, 255, 0);
-  border-right: 2px solid rgba(255, 255, 255, 0);
-  content: "#";
-  transition: max-height 0.3s, border-color 0s;
-}
-
-.link-wrap:focus::before,
-.link-wrap:hover::before,
-.link-wrap:focus::after,
-.link-wrap:hover::after {
-  max-height: 100%;
-  transition-delay: 0.28s;
-  border-color: rgba(230, 90, 27, 1);
-} */
-
-/* Adding underline animation that wraps container when hover. Change color line 78 and 86 */
-
 .hover-wrap a {
   padding: 0.2em calc(0.2em * 1.2);
   border: 2px solid transparent;
@@ -105,7 +43,6 @@
   left: calc(0.2em * 1.2);
   right: calc(0.2em * 1.2);
   height: 2px;
-  /* background: #f26522; */
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
     right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
     left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
@@ -113,7 +50,6 @@
 }
 .hover-wrap .line {
   position: absolute;
-  /* background: #f26522; */
 }
 .hover-wrap .line.-right,
 .hover-wrap .line.-left {
@@ -235,7 +171,6 @@
 
 .back {
   transform: rotatex(-90deg) translatez(25px);
-  /* color: #ffe7c4; */
 }
 
 .front,
@@ -417,31 +352,10 @@
   }
 }
 
-/* @keyframes fadeout {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  65% {
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-} */
-
 /* Completion of bounce animation by showing face and text at the end */
 .showup {
   animation: showup 2.3s;
 }
-
-/* .fadeout {
-  visibility: hidden;
-  animation: fadeout 2s ease;
-  animation-delay: 2s;
-} */
 
 /* Cool animation that might be helpful */
 .flip {

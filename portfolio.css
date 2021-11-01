@@ -9,8 +9,6 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
-
-  /* text-rendering: optimizeLegibility; */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -32,15 +30,11 @@ header {
   padding: 0 20px;
   align-items: center;
   height: 70px;
-  /* position: fixed; */
-  /* width: 100%; */
   font-size: 24px;
   z-index: 5;
 }
 
 main {
-  /* width: 80%;
-    margin: 0 auto; */
   padding-top: 140px;
 }
 
@@ -48,7 +42,6 @@ main {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  /* margin-right: 20px; */
 }
 
 #all-content-about-me {
@@ -57,7 +50,6 @@ main {
   align-items: center;
   justify-content: space-evenly;
   height: 860px;
-  /* border: 1px white solid; */
   padding-bottom: 160px;
 }
 
@@ -68,14 +60,11 @@ main {
 #pic-text-container {
   height: 235px;
   width: 235px;
-  /* border: 1px white solid; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* background-color: var(--new-orange); */
-
   border-radius: 50%;
 }
 
@@ -119,7 +108,6 @@ svg {
 
 #about-me-bot-text {
   text-align: center;
-  /* border: 1px white solid; */
 }
 
 [id*="all-content-"] {
@@ -136,20 +124,8 @@ svg {
   /* border: 1px white solid; */
 }
 
-/* #mf-title {
-  font-weight: 300;
-  margin-top: 14px;
-  font-family: 'Roboto Slab', serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  color: var(--secondary-color);
-  z-index: 2;
-} */
-
 #all-content-skills {
-  /* margin: 0 auto; */
   height: 1300px;
-  /* border: 1px red solid; */
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -159,20 +135,16 @@ svg {
   z-index: 1;
   left: 15%;
   text-align: center;
-  /* box-shadow: 1px 1px 10px 1px rgba(40,44,52,.5); */
   justify-content: space-between;
 }
 
 #skills li {
   list-style: none;
   text-align: center;
-  /* text-indent: 20px; */
   font-weight: 300;
-  /* font-size: 14px; */
 }
 
 #all-content-skills > * {
-  /* width: 80%; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -184,7 +156,6 @@ svg {
 }
 
 .card-title {
-  /* font-weight: 500; */
   padding-bottom: 5px;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
@@ -210,7 +181,6 @@ svg {
 
 #empty-section {
   height: 1000px;
-  /* border: 1px solid red; */
 }
 
 #recent-work {
@@ -248,7 +218,6 @@ svg {
 .recent-project, .project-card {
   height: 300px;
   width: 400px;
-  /* border: 1px solid white; */
   border-radius: 10%;
   cursor: pointer;
 }
@@ -261,7 +230,6 @@ svg {
   height: 100%;
   width: 100%;
   border-radius: 10%;
-  /* box-shadow: rgba(245,245,215,.2) 3px 3px 5px 1px; */
 }
 
 footer {
@@ -270,8 +238,6 @@ footer {
   height: 220px;
   align-items: center;
   justify-content: space-around;
-  /* padding: 10px 0; */
-  /* border: white 1px solid; */
 }
 
 #footer-icon-text {
@@ -280,7 +246,6 @@ footer {
   align-items: center;
   text-align: center;
   width: 40%;
-  /* border: white 1px solid; */
 }
 
 #footer-socials {
@@ -309,13 +274,3 @@ footer {
   height: 32px;
   width: 32px;
 }
-
-/* canvas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 572px; 
-  height: 352px;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-} */
