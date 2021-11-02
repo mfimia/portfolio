@@ -273,29 +273,7 @@
   }
 }
 
-/* Deprecated bounce animation */
-/* .bounce-5 {
-    animation: bounce-5 2s linear;
-}
-
-@keyframes bounce-5 {
-    0%   { transform: scale(1,1) translateY(-500px); }
-    60%  { transform: scale(1,1) translateY(0); }
-
-    68%  { transform: scale(1,1) translateY(-40px); }
-    82%  { transform: scale(1,1)    translateY(0); }
-
-    87%  { transform: scale(1,1)    translateY(-20px); }
-    93%  { transform: scale(1,1)    translateY(0); }
-
-    95%  { transform: scale(1,1) translateY(-10px)}
-    97% { transform: scale(1,1)    translateY(0); }
-
-    98%  { transform: scale(1,1) translateY(-3px)}
-    100% { transform: scale(1,1)    translateY(0); }
-} */
-
-/* Current bounce animation. Coming from right side */
+/* Bounce animation. Coming from right side */
 .bounce-in-right {
   animation: bounce-in-right 1.5s ease;
 }
@@ -319,7 +297,6 @@
 
 .bounce-in-left {
   animation: bounce-in-left 2s ease;
-  /* visibility: visible; */
 }
 
 @keyframes bounce-in-left {
