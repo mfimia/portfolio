@@ -236,7 +236,7 @@ svg {
 footer {
   display: flex;
   flex-direction: column;
-  height: 220px;
+  height: 160px;
   align-items: center;
   justify-content: space-around;
 }
@@ -251,14 +251,14 @@ footer {
 
 #footer-socials {
   display: flex;
-  width: 50%;
+  width: 40%;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 #footer-socials > * {
-  height: 48px;
-  width: 48px;
+  height: 38px;
+  width: 38px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -272,6 +272,6 @@ footer {
 }
 
 #footer-socials img {
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
 }
