@@ -13,6 +13,7 @@
   transition: all 0.4s ease;
   border-radius: 10%;
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   justify-content: center;
   line-height: 1.6;
@@ -20,9 +21,10 @@
 
 .raise:focus .project-card,
 .raise:hover .project-card {
+  visibility: visible;
   opacity: 0.95;
 }
-
+ 
 .project-card h1 {
   padding-bottom: 16px;
 }

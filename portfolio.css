@@ -216,6 +216,7 @@ svg {
 }
 
 .recent-project, .project-card {
+  display: block;
   height: 300px;
   width: 400px;
   border-radius: 10%;
