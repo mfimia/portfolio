@@ -32,7 +32,7 @@
   }
   #footer-socials,
   #footer-icon-text {
-    width: 32%;
+    width: 25%;
   }
   #nav-text-container {
     justify-content: space-around;
@@ -49,7 +49,7 @@
   }
   #footer-socials,
   #footer-icon-text {
-    width: 28%;
+    width: 18%;
   }
   #nav-text-container {
     justify-content: space-around !important;
@@ -86,7 +86,7 @@
 
   #footer-icon-text p {
     font-size: larger;
-    padding-top: 12px;
+    /* padding-top: 12px; */
   }
 }
 
@@ -116,8 +116,13 @@
   }
 
   footer > * {
-    width: 20% !important;
+    width: 20%;
   }
+
+  #footer-socials {
+    width: 15%;
+  }
+
   #about-me hr {
     width: 30%;
   }
@@ -144,7 +149,11 @@
   }
 
   footer > * {
-    width: 15% !important;
+    width: 15%;
+  }
+
+  #footer-socials {
+    width: 12%;
   }
 
   #about-me-bot-text {
