@@ -184,7 +184,7 @@ svg {
 }
 
 #recent-work {
-  height: 1900px;
+  height: 1700px;
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -215,7 +215,8 @@ svg {
   margin-bottom: 20px;
 }
 
-.recent-project, .project-card {
+.recent-project,
+.project-card {
   display: block;
   height: 300px;
   width: 400px;
