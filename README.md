@@ -12,8 +12,8 @@ This website displays what I consider to be some of my most relevant recent work
 
 - Programming languages I work with
 - Tools I use in my daily work
-- Frameworks I am most familiar with
-- 4 of my recent projects
+- Frameworks I love
+- 6 of my recent projects
 - My CV
 - A way to get in touch with me
 - My professional socials
